@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividing the page in to sections</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+          background-color: rgb(25, 158, 199);
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            line-height: 30px;
+            font-size: 17px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        aside{
+            background-color: #ffdead;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        aside, h2{
+            font-size: 1.5px
+            margin-bottom: 10px;
+        }
+        aside, ul{
+            list-style-type: none;
+            padding: 0;
+
+        }
+        aside, a{
+            text-decoration: none;
+            color: #356597;
+        }
+        aside a:hover{
+            text-decoration: none;
+        }
+        aside,li{
+            margin: 5px 0;
+        }
+        video{
+            width: 300px;
+            height: 300px;
+          
+        }
+        img{
+           width: 200px;
+           height: 200px;
+           border-top: 1px;
+  
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+        .image{
+            background-color: tomato;
+            border-radius: 5px;
+            border: 1px solid wheat;
+            display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Group 10 website</h1>
+
+</header>
+<nav>
+    <a href="#section1">Header & nav</a>
+    <a href="#section2">Links & Images</a>
+    <a href="#section3">Video & Audio</a>
+</nav>
+
+
+<section id="section1">
+    <h2>About html header, section and nav</h2>
+    <p>In a well-structured website, the <strong>header</strong> serves as the introductory element,
+         typically containing the site logo, title, and possibly a tagline. 
+         It sets the tone for the user experience and provides essential branding. 
+         The <strong>navigation (nav)</strong> follows, offering users a clear pathway to explore the site's content. 
+         Effective navigation is crucial for usability, often featuring links to key sections such 
+         as Home, About, Services, and Contact. Each section of the website is designed to focus 
+         on specific content, whether it's informative articles, product listings, or multimedia. 
+         By organizing content into distinct sections, a website enhances readability and allows users to 
+         find information quickly, facilitating a seamless browsing experience.</p>
+</section>
+
+<section id="section2">
+    <h2>About links, images </h2>
+    <p>In HTML, links and images play vital roles in enhancing the interactivity and visual 
+        appeal of web pages. Links, created using the <strong> a (anchor) tag</strong>, allow users 
+            to navigate from one page to another or to external sites, facilitating easy
+             access to additional information. The `href` attribute specifies the destination
+              of the link, while attributes like `target` can control how the link opens (e.g., in a new tab). 
+              Images are embedded using the img tag, which requires the `src` attribute to define 
+              the image source and the `alt` attribute for descriptive text to improve accessibility and SEO. 
+              Together, links and images enrich the content experience, making websites more engaging and 
+              informative for users.</p>
+</section>
+
+<section id="section3">
+    <h2>About html video audio and aside</h2>
+    <p>In HTML, the <strong>aside</strong> element is used to represent content that is tangentially related to
+         the main content, such as sidebars, pull quotes, or related links, providing additional
+          context without distracting from the primary narrative. This enhances the overall user 
+          experience by offering supplementary information that can enrich the reader's understanding. Additionally,
+           multimedia elements like video and audio tags enable the incorporation of rich media 
+            into web pages. The video tag allows for the embedding of video files with attributes for
+                controls, autoplay, and loop, while the audio tag serves a similar purpose for sound files. Both elements support 
+                    various formats and provide a more dynamic and engaging way to present information, 
+                    catering to diverse user preferences and enhancing content accessibility.</p>
+</section>
+<aside>
+    <h2>View Our Resume</h2>
+    <ul>
+        <li><a href="./JONATHAN.html">JONATHAN BENLE BINNEY</a></li>
+        <li><a href="./resume.html">EMMANUEL MBRAH</a></li>
+        <li><a href="#">HOTSIAME DOMINIC KWAME</a></li>
+        <li><a href="#">JAMES KWESI AIDOO</a></li>
+    </ul>
+</aside>
+<video src="../video/Learn HTML headers _ footers in 5 minutes_ 🤯(360P).mp4" controls loop></video>
+<audio src="../PTT-20241022-WA0013.opus" controls></audio>
+
+<div class="image">
+    
+<div  >
+    <img src="../image/JOHN.jpg" alt=" JONATHAN">
+    <P>JONATHAN BENLE BINNEY</P>
+</div >
+<div  style="width: 200px; height: 200px;" >
+    <img src="../image/passport.png" alt="EMMANUEL MBRAH">
+    <P>EMMANUEL MBRAH CD/ITE/CR/O1/23/0012</P>
+    <p></p>
+</div>
+<div  style="width: 200px; height: 200px;" >
+    <img src="../image/KWESI.jpg" alt="JAMES KWESI AIDOO">
+    <P>JAMES KWESI AIDOOH</P>
+</div>
+<div  style="width: 200px; height: 200px;" >
+    <img src="../image/DOMINIC HOTSIANE.jpg" alt="HOTSIAME DOMINIC KWAME">
+    <P>HOTSIAME DOMINIC KWAME</P>
+</div>
+</div>
+<footer>
+    <p>&copy; 2024 Group 10 website</p>
+</footer>
+ 
+
+</body>
+</html>
